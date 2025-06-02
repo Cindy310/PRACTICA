@@ -1,7 +1,3 @@
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.Scanner;
-
 public class Producto {
     private int id;
     private String nombre;
@@ -15,25 +11,13 @@ public class Producto {
         this.precio = precio;
     }
 
-    public int getId() {
-        return id;
-    }
+    public int getId() { return id; }
+    public String getNombre() { return nombre; }
+    public String getMarca() { return marca; }
+    public double getPrecio() { return precio; }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public String getMarca() {
-        return marca;
-    }
-
-    public double getPrecio() {
-        return precio;
-    }
-
-    @Override
-    public String toString() {
-        return "ID: " + id + ", Nombre: " + nombre + ", Marca: " + marca + ", Precio: $" + precio;
-    }
+    public void setId(int id) { this.id = id; }
+    public void setNombre(String nombre) { this.nombre = nombre; }
+    public void setMarca(String marca) { this.marca = marca; }
+    public void setPrecio(double precio) { this.precio = precio; }
 }
-
